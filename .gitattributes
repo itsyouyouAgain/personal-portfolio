@@ -1,0 +1,10 @@
+# 设置默认行为，以防用户没有设置core.autocrlf。
+* text=auto
+
+# 明确声明你希望始终规范化并在签出时转换为本地行结束符的文本文件。
+*.svg text eol=lf
+
+# 确保二进制文件不被意外修改
+*.png binary
+*.jpg binary
+
