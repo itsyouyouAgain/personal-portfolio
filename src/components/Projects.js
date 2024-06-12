@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg6 from "../assets/img/project-img6.png";
+import projImg5 from "../assets/img/project-img5.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -23,6 +24,12 @@ export const Projects = () => {
       description: "AWS project",
       imgUrl: projImg2,
       link:"https://github.com/itsyouyouAgain/Ride-Sharing",
+    },
+    {
+      title: "MagicVilla",
+      description: "C# with .NET framework",
+      imgUrl: projImg5,
+      link:"https://github.com/itsyouyouAgain/MagicVilla_API",
     },
     {
       title: "Recipe-app API",
@@ -76,7 +83,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.slice(0, 3).map((project, index) => {
+                          projects.slice(0, 4).map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
